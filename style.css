@@ -1,0 +1,152 @@
+.hidden {
+    display: none;
+  }
+
+:root {
+    --prime: rgb(2, 195, 243);
+    --second: rgb(255, 221, 0);
+    --tert: rgb(233, 46, 117);
+    --prime-alt: rgb(0, 34, 51);
+    --second-alt: rgb(255, 82, 0);
+    --tert-alt: rgb(253, 161, 151);
+    --prime-op: rgba(0, 34, 51, 0.5);
+    --second-op: rgba(0, 173, 255, 0.5);
+    --tert-op: rgba(233, 46, 117, 0.5);
+    --grad-prime: linear-gradient(to top left, rgb(0, 173, 255), rgb(0, 34, 51));
+    --grad-second: linear-gradient(to bottom left, rgb(255, 221, 0), rgb(255, 82, 0));
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+   
+  html {
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    
+    background: var(--prime);
+    text-align: center;
+  }
+
+a:link {
+  color: white;
+  font-weight: bold;
+}
+
+a:visited {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--prime);
+  font-weight: bold;
+}
+
+a:active {
+  color: white;
+  font-weight: bold;
+}
+
+  /* ================================================================ */
+  /* Head */
+  /* ================================================================ */
+
+  .header {
+    background: var(--prime-alt);
+    width: 100%;
+    position: fixed;
+    opacity: 90%;
+  }
+
+  .navigation {
+    display: inline-grid;
+    gap: 12px;
+  }
+
+  .nav {
+    padding-top: 27px;
+    font-size:small;
+  }
+
+  #nav1 {
+    border: solid;
+    border-radius: 40%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #nav2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  #nav3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  #nav4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  #nav5 {
+    grid-column-start: 5;
+    grid-column-end: 5;
+  }
+
+  .title {
+    width: 100%;
+    padding-top: 79px;
+  }
+
+  .titleimg {
+    width: 300px;
+  }
+
+  /* ================================================================ */
+  /* Body */
+  /* ================================================================ */
+
+  .flexbody {
+    background: var(--prime);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .textbody {
+    background: var(--prime-alt);
+    border: solid;
+    text-align:justify;
+    padding: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    flex: 50%;
+  }
+
+  .imggrid {
+    background: var(--prime-alt);
+    border: solid;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    flex: 50%;
+  }
+
+  .previewimg {
+    width: 360px;
+  }
+
+  #sitemap {
+    background: var(--prime-alt);
+    border-top: solid;
+    font-size: small;
+  }
